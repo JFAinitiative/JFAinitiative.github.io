@@ -1,0 +1,42 @@
+:root {
+    --primary-color: #2c5282;
+    --secondary-color: #4299e1;
+    --text-color: #2d3748;
+    --light-bg: #f7fafc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+a:focus {
+    outline: 2px dashed var(--secondary-color);
+}
+
+.header {
+    background: var(--primary-color);
+    color: white;
+    padding: 1rem;
+}
+
+.nav {
+    background: var(--secondary-color);
+    padding: 1rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.nav
