@@ -3,108 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Justice for All Initiative - Free legal resources and aid for community support.">
     <title>Justice for All Initiative - Legal Resources & Support</title>
-    <style>
-        :root {
-            --primary-color: #2c5282;
-            --secondary-color: #4299e1;
-            --text-color: #2d3748;
-            --light-bg: #f7fafc;
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: system-ui, -apple-system, sans-serif;
-            line-height: 1.6;
-            color: var(--text-color);
-        }
-
-        .header {
-            background: var(--primary-color);
-            color: white;
-            padding: 1rem;
-        }
-
-        .nav {
-            background: var(--secondary-color);
-            padding: 1rem;
-        }
-
-        .nav-links {
-            list-style: none;
-            display: flex;
-            gap: 2rem;
-            justify-content: center;
-        }
-
-        .nav-links a {
-            color: white;
-            text-decoration: none;
-        }
-
-        .hero {
-            background: var(--light-bg);
-            padding: 3rem 1rem;
-            text-align: center;
-        }
-
-        .resources-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            padding: 2rem;
-        }
-
-        .resource-card {
-            border: 1px solid #e2e8f0;
-            border-radius: 8px;
-            padding: 1.5rem;
-            background: white;
-        }
-
-        .cta-section {
-            background: var(--primary-color);
-            color: white;
-            padding: 3rem 1rem;
-            text-align: center;
-        }
-
-        .button {
-            display: inline-block;
-            padding: 0.75rem 1.5rem;
-            background: var(--secondary-color);
-            color: white;
-            text-decoration: none;
-            border-radius: 4px;
-            margin-top: 1rem;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 1rem;
-        }
-
-        .footer {
-            background: var(--text-color);
-            color: white;
-            padding: 2rem;
-            text-align: center;
-        }
-
-        @media (max-width: 768px) {
-            .nav-links {
-                flex-direction: column;
-                gap: 1rem;
-                text-align: center;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header class="header">
@@ -115,43 +16,43 @@
 
     <nav class="nav">
         <ul class="nav-links">
-            <li><a href="#resources">Legal Resources</a></li>
-            <li><a href="#services">Legal Aid Services</a></li>
-            <li><a href="#consultation">Get Consultation</a></li>
-            <li><a href="#blog">Blog & News</a></li>
+            <li><a href="#resources" aria-label="Navigate to Legal Resources">Legal Resources</a></li>
+            <li><a href="#services" aria-label="Navigate to Legal Aid Services">Legal Aid Services</a></li>
+            <li><a href="#consultation" aria-label="Navigate to Get Consultation">Get Consultation</a></li>
+            <li><a href="#blog" aria-label="Navigate to Blog & News">Blog & News</a></li>
         </ul>
     </nav>
 
-    <section class="hero">
+    <section class="hero" id="hero">
         <div class="container">
             <h2>Access to Justice for Everyone</h2>
-            <p>Free legal resources and support for our community</p>
+            <p>Free legal resources and support for our community.</p>
         </div>
     </section>
 
-    <section class="resources-grid container">
+    <section class="resources-grid container" id="resources">
         <div class="resource-card">
             <h3>Tenant Rights</h3>
             <p>Understanding your rights as a tenant, dealing with landlord issues, and housing regulations.</p>
-            <a href="#" class="button">Learn More</a>
+            <a href="#" class="button" aria-label="Learn more about Tenant Rights">Learn More</a>
         </div>
         <div class="resource-card">
             <h3>Immigration Procedures</h3>
             <p>Step-by-step guides for immigration processes, documentation, and legal requirements.</p>
-            <a href="#" class="button">Learn More</a>
+            <a href="#" class="button" aria-label="Learn more about Immigration Procedures">Learn More</a>
         </div>
         <div class="resource-card">
             <h3>Social Welfare</h3>
             <p>Information about social benefits, eligibility criteria, and application procedures.</p>
-            <a href="#" class="button">Learn More</a>
+            <a href="#" class="button" aria-label="Learn more about Social Welfare">Learn More</a>
         </div>
     </section>
 
     <section class="cta-section">
         <div class="container">
             <h2>Need Legal Assistance?</h2>
-            <p>Connect with our volunteer lawyers and law students for free consultation</p>
-            <a href="#consultation" class="button">Request Consultation</a>
+            <p>Connect with our volunteer lawyers and law students for free consultation.</p>
+            <a href="#consultation" class="button" aria-label="Request a legal consultation">Request Consultation</a>
         </div>
     </section>
 
@@ -161,12 +62,12 @@
             <div class="resource-card">
                 <h3>Understanding Your Rights</h3>
                 <p>Recent changes in tenant protection laws and what they mean for you.</p>
-                <a href="#" class="button">Read More</a>
+                <a href="#" class="button" aria-label="Read more about tenant protection laws">Read More</a>
             </div>
             <div class="resource-card">
                 <h3>Legal Aid Success Stories</h3>
                 <p>How our volunteer lawyers helped community members resolve their legal challenges.</p>
-                <a href="#" class="button">Read More</a>
+                <a href="#" class="button" aria-label="Read more about legal aid success stories">Read More</a>
             </div>
         </div>
     </section>
@@ -174,7 +75,7 @@
     <footer class="footer">
         <div class="container">
             <p>© 2024 Justice for All Initiative. All rights reserved.</p>
-            <p>Contact us: support@justiceforall.org</p>
+            <p>Contact us: <a href="mailto:support@justiceforall.org" aria-label="Email support">support@justiceforall.org</a></p>
         </div>
     </footer>
 </body>
